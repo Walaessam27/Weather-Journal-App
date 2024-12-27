@@ -6,7 +6,7 @@ const serverUrl = 'http://localhost:3000';
 let d = new Date();
 let newDate = `${d.getMonth() + 1}.${d.getDate()}.${d.getFullYear()}`;
 
-// Event listener for the Generate button
+// action button
 document.getElementById('generate').addEventListener('click', async () => {
     const zipcode = document.getElementById('zip').value;
     const feelings = document.getElementById('feelings').value;
