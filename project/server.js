@@ -7,9 +7,11 @@ let projectData = {};
 
 const app = express();
 
+
 // Middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.use(cors());
 
 app.use(express.static('website'));
